@@ -30,8 +30,8 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
-  - label: "Poetry"
-    name: "poetry"
+  - label: "Poem"
+    name: "poem"
     folder: "src/poems"
     create: true
     editor:
@@ -39,7 +39,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Ambar Galan" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
@@ -47,6 +47,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
+        default: ["poetry"]
         options: ["Tags", "created", "from", "config.yml"]
   - label: "Settings"
     name: "settings"
